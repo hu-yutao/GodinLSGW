@@ -14,7 +14,7 @@ const iconMap = {
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-white/95 backdrop-blur-sm">
       <div className="container-custom section-padding">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -6,7 +6,7 @@ import { pricingPlans } from '@/data/pricing';
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-24 bg-gray-50">
+    <section id="pricing" className="py-24 bg-gray-50/95 backdrop-blur-sm">
       <div className="container-custom section-padding">
         {/* Section Header */}
         <div className="text-center mb-16">

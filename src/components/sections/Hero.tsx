@@ -12,7 +12,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative pt-20 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-br from-gray-50 to-white">
+    <section id="home" className="relative pt-20 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-br from-gray-50/95 to-white/95 backdrop-blur-sm">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
