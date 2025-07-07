@@ -45,7 +45,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black text-white">
+    <footer id="contact" className="bg-black text-white pt-12 pb-6 mt-24">
       <div className="container-custom section-padding py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}

@@ -72,4 +72,8 @@
 
 .container-custom {
   @apply max-w-7xl mx-auto;
+}
+
+html {
+  scroll-behavior: smooth;
 } 
