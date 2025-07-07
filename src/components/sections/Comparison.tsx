@@ -1,6 +1,6 @@
 // Comparison section component
 import { CheckCircle, XCircle, Star, TrendingUp, Award, Users } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { comparisonData, competitorComparison, marketAdvantages } from '@/data/comparison';
 
 const Comparison = () => {
@@ -10,10 +10,7 @@ const Comparison = () => {
     return 'text-red-600 bg-red-100';
   };
 
-  const getScoreIcon = (score: number) => {
-    if (score >= 8) return <CheckCircle className="h-5 w-5 text-green-600" />;
-    return <XCircle className="h-5 w-5 text-red-600" />;
-  };
+
 
   return (
     <section id="comparison" className="py-24 bg-white">
