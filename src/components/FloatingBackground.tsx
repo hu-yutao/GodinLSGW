@@ -1,5 +1,3 @@
-import React from 'react';
-
 const bubbles = Array.from({ length: 18 });
 
 const FloatingBackground = () => {
