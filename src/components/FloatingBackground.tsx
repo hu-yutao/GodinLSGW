@@ -1,18 +1,18 @@
-const meteors = Array.from({ length: 25 });
+const meteors = Array.from({ length: 5 });
 
 const FloatingBackground = () => {
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 z-50 pointer-events-none overflow-hidden">
       {meteors.map((_, i) => {
-        // 随机参数
-        const size = Math.random() * 3 + 1; // 1~4px
+        // 美化参数
+        const width = Math.random() * 1.2 + 1.1; // 1.1~2.3px
         const left = Math.random() * 100;
-        const top = Math.random() * 100;
-        const duration = Math.random() * 3 + 2; // 2~5s
-        const delay = Math.random() * 5;
-        const opacity = Math.random() * 0.6 + 0.3;
-        const length = Math.random() * 100 + 50; // 50~150px
-        const angle = Math.random() * 30 + 15; // 15~45度
+        const top = Math.random() * 80 + 5; // 5~85%
+        const duration = Math.random() * 2 + 2.8; // 2.8~4.8s
+        const delay = Math.random() * 4;
+        const opacity = Math.random() * 0.15 + 0.18; // 0.18~0.33
+        const length = Math.random() * 180 + 120; // 120~300px
+        const angle = 205; // 固定为205度
         return (
           <div
             key={i}
@@ -25,13 +25,14 @@ const FloatingBackground = () => {
             }}
           >
             <div
-              className="bg-black"
               style={{
-                width: size,
-                height: length,
+                width: `${width}px`,
+                height: `${length}px`,
+                borderRadius: `${width}px`,
+                background: `linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0) 100%)`,
                 transform: `rotate(${angle}deg)`,
                 transformOrigin: '0 0',
-                boxShadow: `0 0 ${size * 2}px ${size}px rgba(0, 0, 0, 0.3)`,
+                filter: 'blur(0.5px)',
               }}
             />
           </div>
@@ -50,7 +51,7 @@ const FloatingBackground = () => {
             opacity: 1;
           }
           100% {
-            transform: translateX(-200px) translateY(200px) rotate(0deg);
+            transform: translateX(-300px) translateY(300px) rotate(0deg);
             opacity: 0;
           }
         }
